@@ -2,7 +2,7 @@ class WasmLoader {
   constructor() {}
 
   async wasm(path) {
-    console.log(`Fetchin ${path}`);
+    console.log(`Fetching ${path}`);
 
     if (!WebAssembly.instantiateStreaming) {
       return this.wasmFallback(path);
